@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lato&family=Open+Sans&family=Poppins:wght@300;400;500&display=swap");
+:root {
+	--aqua: #0fd2d2;
+  }
+
+.navbar{
+	display: flex;
+	align-items: center;
+	padding-left: 1rem;
+	height: 4rem;
+	text-align: center;
+	color: #14120a;
+	background-color: #029288;
+	gap: 20px;
+}
+.navbar label{
+	color: #f4f3ee;
+
+}
+.navbar h1{
+	color: #f4f3ee;
+	padding: 20px;
+	letter-spacing: 1px;
+	word-spacing: .5rem;
+	font-family: 'Lato',sans-serif;
+}
+.navbar img{
+	width: 140px;
+}
+#no{
+	height: 36px;
+	width: 80px;
+	font-size: 16px;
+	color: var(--aqua);
+	border: 1px solid #079032;
+	border-radius: 4px;
+	background-color: #474747;
+}
+#no:focus{
+	outline: none;
+}
+.css-2b097c-container{
+	width: 120px;
+	color: black;
+	background-color: #474747;
+}
+.css-yk16xz-control{
+	background-color: #474747 !important;
+	border-color: var(--aqua) !important;
+}

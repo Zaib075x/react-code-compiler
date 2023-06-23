@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+:root {
+  --aqua: #0fd2d2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.App{
+  max-height: 100vh;
+  width: 100%;
+  background-color: #474747;
+  overflow-y: hidden;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  .main{
+  display: flex;
+  height: calc(100vh - 50px);
+  }
+  .left-container{
+  position: relative;
+  flex: 60%;
+  height: calc(100vh - 50px);
+  overflow: auto;
+  resize: vertical;
+  }
+  .right-container{
+  flex: 40%;
+  height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color: #222222;
+  border-left: 3px solid var(--aqua);
+  padding: 5px;
+  }
+  .input-box{
+  flex: 50%;
+  }
+  .input-box textarea{
+  font-size: 16px;
+  }
+  .spinner-box{
+  flex: 50%;
+  background-color: #222222;
+  overflow-y: auto;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  }
+  .spinner-box img{
+  width: 100px;
+  }
+  .output-box{
+  flex: 50%;
+  background-color: #242424;
+  overflow-y: auto;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  position: relative;
   }
-  to {
-    transform: rotate(360deg);
+  .clear-btn{
+  position: absolute;
+  bottom: 30px;
+  right: 18px;
+  width: 80px;
+  height: 40px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  background-color: var(--aqua);
+  border: none;
+  border-radius: 4px;
+  transition: 0.3s;
+  cursor: pointer;
   }
-}
+  .output-box pre{
+  font-size: 15px;
+  white-space: pre-wrap;
+  }
+  h4{
+  color: #F4F3EE;
+  }
+  #line{
+    color: #F4F3EE solid;
+    margin-top: -10px;
+    height: 0;
+    width: 15%;
+    border-bottom: 0.1  rem solid #fff;
+    margin-bottom: 10px;
+  }
+  #code-inp{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  background-color: #242424;
+  color: whitesmoke;
+  padding: 10px;
+  }
+  #code-inp:focus{
+  outline: none;
+  }
+  .run-btn{
+  position: absolute;
+  bottom: 25px;
+  right: 160px;
+  width: 80px;
+  height: 40px;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: var(--aqua);
+  border: none;
+  border-radius: 4px;
+  transition: 0.3s;
+  cursor: pointer;
+  }
+  .run-btn:active{
+  background-color: #039097;
+  }
+  .submit-btn{
+    position: absolute;
+  bottom: 25px;
+  right: 40px;
+  width: 90px;
+  height: 40px;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: var(--aqua);
+  border: none;
+  border-radius: 4px;
+  transition: 0.3s;
+  cursor: pointer;
+  }
+  .btns{
+    background-color: #fff;
+  }
+  
